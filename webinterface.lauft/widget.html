@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Control</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="resources/favicon.png"/>
+</head>
+<body style="height: 140px;">
+    <div class="widget">
+    <section class="seek-and-control">
+        <!-- Now Playing Bar -->
+        <div class="now-playing-seek" id="now-playing">
+            <div class="thumb" id="thumb"></div>
+            <div class="seek" id="seek"></div>
+            <span class="title" id="title"></span>
+        </div>
+        <!-- Media Controls -->
+        <div class="media-controls">
+        <img class="control-buttons"  src="images\loop_off_button.png"    onclick="loop()"      title="Loop All | Loop One | Off" id="loop">
+        <img class="control-buttons"  src="images\prev_button.png"        onclick="previous()"  title="Previous Track">
+        <img class="control-buttons"  src="images\play_button.png"        onclick="playPause()" title="Play | Pause" id="play_pause">
+        <img class="control-buttons"  src="images\stop_button.png"        onclick="stop()"      title="Stop">
+        <img class="control-buttons"  src="images\next_button.png"        onclick="next()"      title="Next Track">
+        <img class="control-buttons"  src="images\shuffle_off_button.png" onclick="shuffle()"   title="Shuffle On/Off" id="shuffle">
+        <img class="control-buttons"  src="images\volume_button.png"      						title="volume" id="volume-button">
+        <div class="slidecontainer">
+              <input type="range" min="0" max="100" value="50" class="slider" id="myRange" title="50" oninput="volume()">
+        </div>
+        </div>
+    </section>
+    </div>
+    <script src="js/jsonrpc.js"></script>
+	<script src="js/xbmc.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

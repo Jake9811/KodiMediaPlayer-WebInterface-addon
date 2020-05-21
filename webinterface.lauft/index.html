@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LAUFT Media Dashboard</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="resources/favicon.png" rel="shortcut icon" type="image/png">
+	<link href="widget.html">
+</head>
+<body>
+	<!-- Main Container -->
+	<div class="container">
+		<!-- Header Title -->
+		<div class="header">
+			<img class="logo" src="https://app.lauft.work/assets/lauft_reverse_logo-a48e5baabe2f37e5833b814057ad20b18ddd3e55683dcc633d0060fc110d97f5.png" alt="LAUFT">
+		</div>
+		<img src="images/toggle-button.png" class="toggle-button" onclick="navToggle()">
+		<!-- Left Pane Navigation -->
+		<nav class="menu" id="menu">
+			<h2 class="panel" onclick="mainUpdate(0)">Local Media</h2>
+		    <h2 class="panel" onclick="mainUpdate(1)">Drive Media</h2>
+		    <h2 class="panel" onclick="mainUpdate(2)" id="play_music">Play Music</h2>
+		    <h2 class="panel end-panel" onclick="mainUpdate(3)">Settings</h2>
+		</nav>
+		<article class="article" id="article">
+		<!-- Main Content Window --> 
+			<section class="main-content-window" id="main-content-window">
+				
+			</section>
+			<section class="seek-and-control">
+			<!-- Now Playing Bar -->
+			<div class="now-playing-seek" id="now-playing">
+				<div class="thumb" id="thumb"></div>
+				<div class="seek" id="seek"></div>
+				<span class="title" id="title"></span>
+			</div>
+			<!-- Media Controls -->
+			<div class="media-controls">
+			<img class="control-buttons"  src="images\loop_off_button.png"    onclick="loop()"      title="Loop All | Loop One | Off" id="loop">
+			<img class="control-buttons"  src="images\prev_button.png"        onclick="previous()"  title="Previous Track">
+			<img class="control-buttons"  src="images\play_button.png"        onclick="playPause()" title="Play | Pause" id="play_pause">
+			<img class="control-buttons"  src="images\stop_button.png"        onclick="stop()"      title="Stop">
+			<img class="control-buttons"  src="images\next_button.png"        onclick="next()"      title="Next Track">
+			<img class="control-buttons"  src="images\shuffle_off_button.png" onclick="shuffle()"   title="Shuffle On/Off" id="shuffle">
+			<img class="control-buttons"  src="images\volume_button.png"      						title="volume" id="volume-button">
+			<div class="slidecontainer">
+  				<input type="range" min="0" max="100" value="50" class="slider" id="myRange" title="50" oninput="volume()">
+			</div>
+			</div>
+			</section>
+		</article>
+	</div>
+	<script src="js/jsonrpc.js"></script>
+	<script src="js/xbmc.js"></script>
+	<script src="js/script.js"></script>
+<!-- Main Container Ends -->
+</body>
+</html>

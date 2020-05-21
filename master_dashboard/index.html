@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAUFT Media Master Dashboard</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="resources/favicon.png"/>
+</head>
+<body>
+    <!-- Header Title -->
+	<div class="header">
+		<img class="logo" src="https://app.lauft.work/assets/lauft_reverse_logo-a48e5baabe2f37e5833b814057ad20b18ddd3e55683dcc633d0060fc110d97f5.png" alt="LAUFT">
+    </div>
+    <!-- Main Content Window --> 
+	<section class="main-content-window" id="main-content-window">
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="banner" id="barrie"></div>
+                <a href="http://172.28.100.143/" target="_blank">
+                    <h1>Barrie</h1>
+                </a>
+                <div class="widget">
+                    <div class="thumb" id="thumb"></div>
+                    <div class="title" id="title">Now Playing</div>
+                    <div class="control-buttons"  onclick="previous()"><div class="previous"></div><div class="previous"></div></div>
+                    <div class="control-buttons play"  onclick="playPause()" id="play_pause"></div>
+                    <div class="control-buttons"  onclick="stop()" id="stop"></div>
+                    <div class="control-buttons"  onclick="next()"><div class="next"></div><div class="next"></div></div>
+                    <div class="control-buttons"  id="volume-button"></div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="volume()">
+                    </div>
+                    <input class="reboot" type="button" value="REBOOT" onclick="reboot()">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="banner" id="newmarket"></div>
+                <a href="http://172.28.100.143/" target="_blank">
+                    <h1>Newmarket</h1>
+                </a>
+                <div class="widget">
+                    <div class="thumb" id="thumb"></div>
+                    <div class="title" id="title">Now Playing</div>
+                    <div class="control-buttons"  onclick="previous()"><div class="previous"></div><div class="previous"></div></div>
+                    <div class="control-buttons play"  onclick="playPause()" id="play_pause"></div>
+                    <div class="control-buttons"  onclick="stop()" id="stop"></div>
+                    <div class="control-buttons"  onclick="next()"><div class="next"></div><div class="next"></div></div>
+                    <div class="control-buttons"  id="volume-button"></div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="volume()">
+                    </div>
+                    <input class="reboot" type="button" value="REBOOT" onclick="reboot()">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="banner" id="vaughan"></div>
+                <a href="http://172.28.100.143/" target="_blank">
+                    <h1>Vaughan</h1>
+                </a>
+                <div class="widget">
+                    <div class="thumb" id="thumb"></div>
+                    <div class="title" id="title">Now Playing</div>
+                    <div class="control-buttons"  onclick="previous()"><div class="previous"></div><div class="previous"></div></div>
+                    <div class="control-buttons play"  onclick="playPause()" id="play_pause"></div>
+                    <div class="control-buttons"  onclick="stop()" id="stop"></div>
+                    <div class="control-buttons"  onclick="next()"><div class="next"></div><div class="next"></div></div>
+                    <div class="control-buttons"  id="volume-button"></div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="volume()">
+                    </div>
+                    <input class="reboot" type="button" value="REBOOT" onclick="reboot()">
+                </div>
+            </div>  
+            <div class="grid-item">
+                <div class="banner" id="toronto"></div>
+                <a href="http://172.28.100.143/" target="_blank">
+                    <h1>Toronto</h1>
+                </a>
+                <div class="widget">
+                    <div class="thumb" id="thumb"></div>
+                    <div class="title" id="title">Now Playing</div>
+                    <div class="control-buttons"  onclick="previous()"><div class="previous"></div><div class="previous"></div></div>
+                    <div class="control-buttons play"  onclick="playPause()" id="play_pause"></div>
+                    <div class="control-buttons"  onclick="stop()" id="stop"></div>
+                    <div class="control-buttons"  onclick="next()"><div class="next"></div><div class="next"></div></div>
+                    <div class="control-buttons"  id="volume-button"></div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="volume()">
+                    </div>
+                    <input class="reboot" type="button" value="REBOOT" onclick="reboot()">
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="banner" id="burlington"></div>
+                <a href="http://172.28.100.143/" target="_blank">
+                    <h1>Burlington</h1>
+                </a>
+                <div class="widget">
+                    <div class="thumb" id="thumb"></div>
+                    <div class="title" id="title">Now Playing</div>
+                    <div class="control-buttons"  onclick="previous()"><div class="previous"></div><div class="previous"></div></div>
+                    <div class="control-buttons play"  onclick="playPause()" id="play_pause"></div>
+                    <div class="control-buttons"  onclick="stop()" id="stop"></div>
+                    <div class="control-buttons"  onclick="next()"><div class="next"></div><div class="next"></div></div>
+                    <div class="control-buttons"  id="volume-button"></div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="myRange" oninput="volume()">
+                    </div>
+                    <input class="reboot" type="button" value="REBOOT" onclick="reboot()">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

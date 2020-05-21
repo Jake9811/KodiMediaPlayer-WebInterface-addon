@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="webinterface.lauft"
+  version="0.0.10"
+  name="LAUFT Dashboard"
+  provider-name="Jake">
+  <requires>
+    <import addon="xbmc.json" version="6.0.0"/>
+  </requires>
+  <extension point="xbmc.webinterface"/>
+  <extension point="xbmc.addon.metadata">
+  <summary lang="en">Web Dashboard to control and monitor the Media Center</summary>
+  <description lang="en">It has very basic structure with user role management, music playback control and system settings for admins</description>
+  <language></language>
+  <platform>all</platform>
+  <!--<license>GPL-2.0</license>-->
+  <!--<forum>http://forum.kodi.tv/showthread.php?tid=112956</forum>-->
+  <!--<source>https://github.com/mizaki/awxi</source>-->
+  <assets>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+  </assets>
+  </extension>
+</addon>

@@ -11,7 +11,7 @@ async function setup() {
     // Connect to JSON RPC
     await initConnect()
     // Update the media player every second
-    setInterval(function() {
+        setInterval(function() {
         currentPlayerBar()
     },1000)
 }

@@ -1,7 +1,0 @@
-AuthUserFile /resources/.htpijja
-AuthType Basic
-AuthName "LAUFT Media Player"
-
-<Files "index.html">
-  Require valid-user
-</Files>
